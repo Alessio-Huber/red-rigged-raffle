@@ -4,7 +4,7 @@ import { GewinnbarerHase } from "./gewinnbarer-hase.js";
 export class Verlosung {
 
   public main() {
-    const redArmy = [
+    const teilnehmer = [
       "@Gangsta2007",
       "@LockeDerBoss",
       "@MiiMiiSeinBruder",
@@ -47,11 +47,11 @@ export class Verlosung {
       new GewinnbarerHase("PlayStation 5 Slim", 3),
       new GewinnbarerHase("gebrauchte Sneaker", 5),
     ];
-    const luckyMuckies = new AbsneakenderHase(
-      redArmy,
+    const Gewinner = new AbsneakenderHase(
+      teilnehmer,
       fiktivePreise,
     ).absneaken();
-    for (const [opfer, gewonnenerHase] of luckyMuckies.entries()) {
+    for (const [opfer, gewonnenerHase] of Gewinner.entries()) {
       console.log(`${opfer} gewinnt ${gewonnenerHase}`);
     }
   }
