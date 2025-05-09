@@ -1,19 +1,19 @@
 export class GewinnbarerHase {
 
   constructor(
-    private derHase: string,
-    private derZahlenmässigeHase: number,
+    private bezeichnung: string,
+    private verfuegbareAnzahl: number,
   ) {}
 
   public get hase(): string {
-    return this.derHase;
+    return this.bezeichnung;
   }
 
   public get zahlenmässigerHase(): number {
-    return this.derZahlenmässigeHase;
+    return this.verfuegbareAnzahl;
   }
 
   public set zahlenmässigerHase(neuerHase: number) {
-    this.derZahlenmässigeHase = neuerHase;
+    this.verfuegbareAnzahl = neuerHase;
   }
 }
