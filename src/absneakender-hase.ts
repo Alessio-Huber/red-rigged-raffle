@@ -10,25 +10,6 @@ export class AbsneakenderHase {
     private gewinnbareHasen: GewinnbarerHase[],
   ) {}
 
-  //  _____________________________
-  // < Finger weg von meinem Code! >
-  //  -----------------------------
-  //       \                    / \  //\
-  //        \    |\___/|      /   \//  \\
-  //             /0  0  \__  /    //  | \ \
-  //            /     /  \/_/    //   |  \  \
-  //            @_^_@'/   \/_   //    |   \   \
-  //            //_^_/     \/_ //     |    \    \
-  //         ( //) |        \///      |     \     \
-  //       ( / /) _|_ /   )  //       |      \     _\
-  //     ( // /) '/,_ _ _/  ( ; -.    |    _ _\.-~        .-~~~^-.
-  //   (( / / )) ,-{        _      `-.|.-~-.           .~         `.
-  //  (( // / ))  '/\      /                 ~-. _ .-~      .-~^-.  \
-  //  (( /// ))      `.   {            }                   /      \  \
-  //   (( / ))     .----~-.\        \-'                 .~         \  `. \^-.
-  //              ///.----..>        \             _ -~             `.  ^-`  ^-_
-  //                ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~
-  //
   public absneaken(): Map<string, string> {
     const richieMichies = new Map<string, string>();
     const mokieBrokies = new Array<string>();
@@ -38,7 +19,7 @@ export class AbsneakenderHase {
         zufälligerHase * this.brokieMokies.length,
       );
       const ausgesuchterHase = this.brokieMokies[rangierterHase];
-      mokieBrokies.push(ausgesuchterHase); // Ich push die Brokies auf die Mokies, yeah!
+      mokieBrokies.push(ausgesuchterHase); 
       this.brokieMokies.pop();
     }
     while (this.gewinnbareHasen.length > 0 && mokieBrokies.length > 0) {
